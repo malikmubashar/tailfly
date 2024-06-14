@@ -2,7 +2,6 @@
 node_modules
 .github
 src
-dev
 test
 types/*
 build.mjs

@@ -2,16 +2,14 @@ import plugin from 'tailwindcss/plugin';
 import { CONFIG } from './config';
 import { StaticVariants } from './variants';
 import { BASE } from './base';
-import { isObject } from "./utils/objects";
-import Theme from './theme';
+import Theme from './def';
 import init from "./init";
 import type {
     TailflyType,
     TailflyReturnType
 } from "types";
 
-
-export default function Tailfly(inp: TailflyType): TailflyReturnType {
+export default function Tailfly(inp: TailflyType|number): TailflyReturnType {
     const { def, darkMode } = init<TailflyType>(inp?.def ? inp : {});
     def && Theme(def, darkMode);
     darkMode && (CONFIG.darkMode = darkMode);

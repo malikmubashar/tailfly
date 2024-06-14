@@ -1,4 +1,4 @@
-import * as animateCss from './libraries/animate-css';
+import * as animateCss from './lib/animate-css';
 import writer from './utils/obj-writer';
 import reader from './utils/obj-reader';
 import type { Config } from 'tailwindcss/types/config';
@@ -17,6 +17,7 @@ export const CONFIG: Config = {
         }
     }
 };
+
 
 export const setter = writer(CONFIG);
 export const getter = reader(CONFIG);
