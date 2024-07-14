@@ -1,0 +1,10 @@
+
+node_modules
+.github
+src
+test
+test.sh
+types/*
+build.mjs
+tsconfig.json
+*.tgz
